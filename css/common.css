@@ -1,0 +1,100 @@
+@charset "UTF-8";
+html {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  html {
+    font-size: 0.833vw;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 2.564vw;
+  }
+}
+.pc_n {
+  display: none;
+}
+@media (max-width: 767px) {
+  .pc_n {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .sp_n {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.inner {
+  max-width: 124rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.title {
+  position: relative;
+  padding-bottom: 2.4rem;
+}
+@media (max-width: 767px) {
+  .title {
+    padding-bottom: 1rem;
+  }
+}
+.title::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  bottom: 0;
+  background-color: #02B1A6;
+}
+.title p {
+  color: var(--sub-color, #E5F8EF);
+  /* En heading　h2 */
+  font-family: Aboreto;
+  font-size: 5.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 4rem */
+  font-variant: all-small-caps;
+}
+@media (max-width: 767px) {
+  .title p {
+    font-size: 2.8rem;
+  }
+}
+.title h2 {
+  color: var(--text-color, #333);
+  /* body text base */
+  font-family: "Zen Old Mincho";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 2.56rem */
+  margin-top: -2.2rem;
+}
+@media (max-width: 767px) {
+  .title h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.wrap {
+  overflow: hidden;
+}

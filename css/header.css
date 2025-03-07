@@ -1,0 +1,302 @@
+.header-contents01 {
+  border-bottom: 1px solid var(--headergradation, #02B1A6);
+  background: var(--headergradation, linear-gradient(270deg, #02B1A6 5%, #1CE0D4 73.5%, #02B1A6 99.5%));
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+@media (max-width: 767px) {
+  .header-contents01 {
+    height: 3.2rem;
+    padding-left: 1rem;
+  }
+}
+
+.header__tel_icon {
+  color: var(--FFF, #FFF);
+  font-family: "Zen Old Mincho";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 19.2px */
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--FFF, #FFF);
+  /* memo text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.92rem */
+}
+.header__tel_icon img {
+  width: 1rem;
+}
+
+.header__time {
+  color: var(--FFF, #FFF);
+  /* memo text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.92rem */
+  margin-left: 2rem;
+}
+
+.header__text_sp {
+  color: var(--FFF, #FFF);
+  font-family: "Zen Old Mincho";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 1.6rem */
+}
+
+.hospital {
+  width: 19.6rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin-right: 0.8rem;
+}
+
+.tab-container {
+  display: flex;
+  width: 100%;
+  gap: 0.4rem;
+  height: 2.4rem;
+}
+
+.tab {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  width: 6.2rem;
+  border-top: 1px solid #02B1A6;
+  border-right: 1px solid #02B1A6;
+  border-left: 1px solid #02B1A6;
+  background: var(--FFF, #FFF);
+  color: var(--main-color, #02B1A6);
+  text-align: center;
+  font-family: "Zen Old Mincho";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 1.6rem */
+}
+
+.tab.active {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  background: linear-gradient(270deg, #02B1A6 5%, #1CE0D4 73.5%, #02B1A6 99.5%);
+  color: var(--FFF, #FFF);
+  text-align: center;
+  font-family: "Zen Old Mincho";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 1.6rem */
+}
+
+.phone-container {
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  border: 1px solid var(--main-color, #02B1A6);
+  background: var(--FFF, #FFF);
+  padding: 0.4rem 1.6rem;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.phone-container:hover {
+  opacity: 0.8;
+}
+
+.business-hours {
+  margin-right: 0.8rem;
+}
+.business-hours p {
+  color: var(--main-color, #02B1A6);
+  text-align: center;
+  font-family: "Zen Old Mincho";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 1.6rem */
+}
+
+.phone-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.phone-number {
+  color: var(--text-color, #333);
+  text-align: center;
+  /* header button text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 2.24rem */
+  letter-spacing: 0.056rem;
+}
+
+.header-contents02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.header-contents02__logo {
+  width: 35.6rem;
+}
+
+.header-contents02__box01 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 1.6rem;
+}
+
+.header-contents02__line {
+  width: 12.9rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--LINE-color, #06C755);
+  background: var(--FFF, #FFF);
+  color: var(--LINE-color, #06C755);
+  /* header button text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 2.24rem */
+  letter-spacing: 0.056rem;
+  padding-left: 4.6rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.header-contents02__line::after {
+  content: "";
+  position: absolute;
+  background: url(../img/top/line.png) no-repeat center center/cover;
+  width: 2rem;
+  height: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.6rem;
+}
+.header-contents02__line:hover {
+  color: var(--FFF, #FFF);
+  border-radius: 0.5rem;
+  border: 1px solid var(--FFF, #FFF);
+  background: var(--LINE-color, #06C755);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.header-contents02__line:hover::after {
+  background: url(../img/top/line-hover.png) no-repeat center center/cover;
+}
+.header-contents02__line img {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.header-contents02__web {
+  width: 12.6rem;
+  height: 3.8rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.8rem;
+  color: var(--WEBbtn, #F98979);
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 2.24rem */
+  letter-spacing: 0.056rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--WEBbtn, #F98979);
+  background: var(--FFF, #FFF);
+  transition: all 0.3s ease;
+  padding-left: 4.6rem;
+  position: relative;
+}
+.header-contents02__web:hover {
+  border-radius: 0.5rem;
+  border: 1px solid var(--FFF, #FFF);
+  background: #F98979;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: var(--FFF, #FFF);
+}
+.header-contents02__web:hover::after {
+  background: url(../img/top/web_hover.png) no-repeat center center/cover;
+}
+.header-contents02__web::after {
+  position: absolute;
+  content: "";
+  background: url(../img/top/web.png) no-repeat center center/cover;
+  width: 2rem;
+  height: 2rem;
+  aspect-ratio: 1/1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1.6rem;
+}
+
+.header-contents02__insta {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.8rem;
+  transition: all 0.3s ease;
+}
+.header-contents02__insta:hover {
+  opacity: 0.7;
+}
+
+.header-contents02__box03 {
+  margin-top: 1.6rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.header__nab_link a {
+  color: var(--text-color, #333);
+  /* body text base */
+  font-family: "Zen Old Mincho";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 2.56rem */
+  transition: all 0.3s ease;
+}
+.header__nab_link a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .header__nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .header__nab_link a {
+    font-size: 1.4rem;
+  }
+}
