@@ -562,8 +562,10 @@
     margin-top: 4.6rem;
 }
 
-.footer__category {
-    margin-top: 2.4rem;
+@include mq('sp') {
+        .footer__category {
+            margin-top: 2.4rem;
+    }
 }
 
 .footer__contents02_sp {

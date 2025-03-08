@@ -154,7 +154,7 @@ const swiper = new Swiper(".fv-swiper", {
 
   document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
+    const menu = document.querySelector('.menu-sp');
 
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
