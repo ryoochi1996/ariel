@@ -560,10 +560,11 @@
   margin-top: 4.6rem;
 }
 
-.footer__category {
-  margin-top: 2.4rem;
+@media (max-width: 767px) {
+  .footer__category {
+    margin-top: 2.4rem;
+  }
 }
-
 .footer__contents02_sp {
   display: flex;
   justify-content: space-between;

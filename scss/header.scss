@@ -292,7 +292,7 @@
     align-items: center;
     @include mq('sp') {
       flex-direction: column;
-      gap: 1rem;
+      gap: .8rem;
       width: 100%;
       align-items: flex-start;
     }
@@ -303,6 +303,18 @@
     @include mq('sp') {
       width: 100%;
       text-align: left;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background: url(../img/top/line__sp.png) no-repeat center center/cover;
+        width: .4rem;
+        height: .8rem;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.2rem;
+      }
+
     }
     a {
         color: var(--text-color, #333);
@@ -320,6 +332,7 @@
           width: 100%;
           border-bottom: 1px solid #EEEEEE;
           display: block;
+          padding-left: 1.1rem;
         }
         &:hover {
             opacity: 0.8;
@@ -333,6 +346,7 @@
         display: flex;
         gap: 2rem;
         align-items: center;
+
 
       }
     .header__nab_link  {
@@ -397,7 +411,7 @@
     top: .4rem;
 }
 
-.menu {
+.menu-sp {
     position: fixed;
     top: 0;
     left: 0;
@@ -410,18 +424,18 @@
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.menu.active {
+.menu-sp.active {
     visibility: visible;
     opacity: 1;
 }
 
-.menu-content {
+.menu-sp-content {
     display: flex;
     flex-direction: column;
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease;
-    padding-top: 9.8rem;
+    padding-top: 9.1rem;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -431,7 +445,7 @@
     }
 }
 
-.menu.active .menu-content {
+.menu-sp.active .menu-sp-content {
     opacity: 1;
 }
 
@@ -441,11 +455,11 @@
     margin: 0;
 }
 
-.menu li:last-child {
+.menu-sp li:last-child {
     border-bottom: none;
 }
 
-.menu a:hover {
+.menu-sp a:hover {
     color: #ccc;
 }
 
@@ -474,3 +488,135 @@
   width: 21.6282rem;
 height: 2.1011rem;
 }
+
+
+.menu__btn-list {
+  padding-top: 1.7rem;
+  a {
+    height: 4.2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    text-align: center;
+    
+    /* header button text */
+    font-family: "Zen Old Mincho";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 2.24rem */
+    letter-spacing: 0.056rem;
+    border-radius: 0.5rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+    }
+
+  }
+} 
+
+.menu__btn {
+
+}
+
+.menu__btn--web {
+  color: var(--WEBbtn, #F98979);
+  border: 1px solid var(--WEBbtn, #F98979);
+  background: var(--FFF, #FFF);
+  padding-left: 13.9rem;
+  &::after {
+    background: url(../img/top/web_sp.png) no-repeat center center/cover;
+    left:10.7rem;
+  }
+}
+
+.menu__btn--line {
+  margin-top: 1rem;
+  padding-left: 13.7rem;
+  color: var(--LINE-color, #06C755);
+border: 1px solid var(--LINE-color, #06C755);
+  &::after {
+    background: url(../img/top/line_sp.png) no-repeat center center/cover;
+    left:10.75rem;
+
+  }
+}
+
+.menu__btn--tel {
+  margin-top: 1rem;
+  color: var(--text-color, #333);
+  padding-left: 14.2rem;
+  border: 1px solid var(--text-color, #333);
+
+  &::after {
+    background: url(../img/top/Phone_sp.png) no-repeat center center/cover;
+    left:11.2rem;
+  }
+}
+
+.menu__hours {
+  margin-top: .8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  border-top: 1px solid var(--main-color, #02B1A6);
+  border-bottom: 1px solid var(--main-color, #02B1A6);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menu__hours-title {
+  color: var(--main-color, #02B1A6);
+  text-align: center;
+  
+  /* SPtext */
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 2.24rem */
+}
+
+.menu__hours-time {
+  color: var(--main-color, #02B1A6);
+  text-align: center;
+  
+  /* SPtext */
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 2.24rem */
+}
+
+.menu__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  margin-top: 1rem;
+
+}
+
+.menu__link {
+  color: #FFF;
+
+  /* SP ctabtn */
+  font-family: "Zen Old Mincho";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 1.92rem */
+  letter-spacing: 0.048rem;
+  background: #02B1A6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.9rem;
+}
+
