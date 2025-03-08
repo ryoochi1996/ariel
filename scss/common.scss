@@ -139,3 +139,8 @@ img {
   white-space: nowrap;
   margin-top: 0.9rem;
 }
+
+
+body.no-scroll {
+  overflow: hidden;
+}

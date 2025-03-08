@@ -68,6 +68,7 @@ const swiper = new Swiper(".fv-swiper", {
   });
 
 
+  // マンスリープライススライダー-------------------------------------
   const mySwiper = new Swiper('.manthly-swiper', {
     loop: true,
     slidesPerView: 1,
@@ -119,6 +120,9 @@ const swiper = new Swiper(".fv-swiper", {
     }
   });
 
+
+
+  // 施術一覧スライダー-------------------------------------
   const facilitySwiper = new Swiper('.facility__swiper', {
     loop: true,
     slidesPerView: 1,
@@ -144,3 +148,19 @@ const swiper = new Swiper(".fv-swiper", {
       prevEl: '.swiper-button-prev',
     }
   });
+
+
+  // ハンバーガーメニュー-------------------------------------
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        menu.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
+    });
+});
+
+
