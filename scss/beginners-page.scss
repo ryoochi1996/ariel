@@ -1,0 +1,111 @@
+@import "_common";
+
+.beginners-page-top {
+  margin-top: 6.7rem;
+}
+
+.beginners__title {
+  display: inline-block;
+}
+
+.beginners__title p {
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.beginners__title h2 {
+  padding-left: 0.3rem;
+}
+
+.beginners__title::after {
+  left: 0;
+}
+
+.beginners__title-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgba(2, 177, 166, 1);
+  margin-top: 3.5rem;
+  font-family: "Zen Old Mincho";
+  line-height: 1.6;
+}
+
+.reason-top {
+  margin-top: 15rem;
+}
+
+.reason__title {
+  display: inline-block;
+}
+
+.reason__title h2 {
+  text-align: left;
+}
+
+.reason__title::after {
+  left: 0;
+}
+
+.reason-card__item {
+  position: relative; /* ✅ これを追加！ */
+  display: block; /* ✅ `a`タグなので block に */
+}
+
+.reason-card__item::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* ✅ 画像のサイズに合わせて適切な値を指定 */
+  height: 100px;
+  background-image: url("../img/beginners/polygon1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reason-card__item::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px; /* ✅ こちらも適切なサイズを指定 */
+  height: 120px;
+  background-image: url("../img/beginners/polygon2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reason__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.5rem;
+}
+
+.reason-card__item-img {
+  aspect-ratio: 280/291;
+  object-fit: cover;
+  width: 100%;
+}
+
+.reason-card__body {
+  margin-top: 2rem;
+}
+
+.reason-card__text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.7;
+  font-family: "Zen Old Mincho";
+  color: rgba(2, 177, 166, 1);
+  text-align: center;
+}
+
+.reason-card__text-sub {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: "Zen Old Mincho";
+  margin-top: 2rem;
+}

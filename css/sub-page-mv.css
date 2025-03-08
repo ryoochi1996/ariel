@@ -1,0 +1,28 @@
+.sub-page-mv {
+  margin-top: 1.5rem;
+}
+
+.sub-page-mv__inner {
+  height: inherit;
+  position: relative;
+}
+
+.sub-page-mv__picture {
+  height: inherit;
+  display: block;
+}
+
+.sub-page-mv__picture img {
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sub-page-mv__title {
+  position: absolute;
+  top: 34%;
+  left: 35.5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/*# sourceMappingURL=sub-page-mv.css.map */
