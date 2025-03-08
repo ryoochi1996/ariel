@@ -48,7 +48,7 @@ const swiper = new Swiper(".fv-swiper", {
       },
       // 768px以上の場合
       768: {
-        slidesPerView: 2.1, // 768px以上では2.1枚表示
+        slidesPerView: 1.92, // 768px以上では2.1枚表示
       }
     },
     autoplay: { // 自動再生
@@ -107,6 +107,32 @@ const swiper = new Swiper(".fv-swiper", {
       // 768px以上の場合
       768: {
         slidesPerView: 4,
+      }
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
+  const facilitySwiper = new Swiper('.facility__swiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: function() {
+      return window.innerWidth <= 767 ? 16 : 32;
+    }(),
+    breakpoints: {
+      // 768px未満の場合
+      0: {
+        slidesPerView: 1.38,
+      },
+      // 768px以上の場合
+      768: {
+        slidesPerView: 2.5,
       }
     },
     pagination: {

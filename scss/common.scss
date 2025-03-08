@@ -1,70 +1,68 @@
-@import '_common';
+@import "_common";
 
 html {
-    font-size: 10px;
+  font-size: 10px;
 }
 
-
-@media screen and (min-width:768px) and ( max-width:1200px) {
-    html {
-        font-size:0.833vw;
-        }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  html {
+    font-size: 0.833vw;
+  }
 }
 
 @media (max-width: 767px) {
-    html {
-        font-size:2.564vw;
-    }
+  html {
+    font-size: 2.564vw;
+  }
 }
 
-
 .pc_n {
-    display: none;
-    @include mq('sp') {
-        display: block;
-    }
+  display: none;
+  @include mq("sp") {
+    display: block;
+  }
 }
 
 .sp_n {
-    @include mq('sp') {
-        display: none;
-    }
+  @include mq("sp") {
+    display: none !important;
+  }
 }
 
 img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .inner {
-    max-width: 124rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: auto;
-    margin-left: auto;
-    @include mq('sp') {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+  max-width: 124rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("sp") {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .title {
-    position: relative;
-    padding-bottom: 2.4rem;
-    @include mq('sp') {
-        padding-bottom: 1rem;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      width: 4rem;
-      height: 0.2rem;
-      bottom: 0;
-      background-color: #02B1A6;
-    }
+  position: relative;
+  padding-bottom: 2.4rem;
+  @include mq("sp") {
+    padding-bottom: 1rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 0.2rem;
+    bottom: 0;
+    background-color: #02b1a6;
+  }
 
   p {
-    color: var(--sub-color, #E5F8EF);
+    color: var(--sub-color, #e5f8ef);
     /* En heading　h2 */
     font-family: Aboreto;
     font-size: 5.7rem;
@@ -72,8 +70,8 @@ img {
     font-weight: 400;
     line-height: 100%; /* 4rem */
     font-variant: all-small-caps;
-    @include mq('sp') {
-        font-size: 2.8rem;
+    @include mq("sp") {
+      font-size: 2.8rem;
     }
   }
   h2 {
@@ -85,14 +83,59 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: 160%; /* 2.56rem */
-    margin-top: -2.2rem;f
-    @include mq('sp') {
-        font-size: 1.4rem;
+    margin-top: -2.2rem;
+    @include mq("sp") {
+      font-size: 1.4rem;
     }
   }
 }
 
 .wrap {
-    overflow: hidden;
+  overflow: hidden;
 }
 
+.sub-page-mv {
+  height: 35rem;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--headergradation, #02b1a6);
+}
+
+.sub-page-mv__inner {
+  height: 100%;
+  position: relative;
+}
+
+.sub-page-mv__picture {
+  height: inherit;
+  display: block;
+  overflow: hidden;
+}
+
+.sub-page-mv__picture img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.sub-page-mv__title {
+  position: absolute;
+  top: 35%;
+  left: 35.5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.page-section-title {
+  font-size: 9.6rem;
+  font-weight: 400;
+  font-family: Aboreto;
+  color: rgba(229, 248, 239, 1);
+  white-space: nowrap;
+}
+
+.page-section-title-sub {
+  font-size: 3.2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: 0.9rem;
+}

@@ -24,7 +24,7 @@ html {
 
 @media (max-width: 767px) {
   .sp_n {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -62,10 +62,10 @@ img {
   width: 4rem;
   height: 0.2rem;
   bottom: 0;
-  background-color: #02B1A6;
+  background-color: #02b1a6;
 }
 .title p {
-  color: var(--sub-color, #E5F8EF);
+  color: var(--sub-color, #e5f8ef);
   /* En heading　h2 */
   font-family: Aboreto;
   font-size: 5.7rem;
@@ -97,4 +97,50 @@ img {
 
 .wrap {
   overflow: hidden;
+}
+
+.sub-page-mv {
+  height: 35rem;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--headergradation, #02b1a6);
+}
+
+.sub-page-mv__inner {
+  height: 100%;
+  position: relative;
+}
+
+.sub-page-mv__picture {
+  height: inherit;
+  display: block;
+  overflow: hidden;
+}
+
+.sub-page-mv__picture img {
+  height: inherit;
+  object-fit: cover;
+}
+
+.sub-page-mv__title {
+  position: absolute;
+  top: 35%;
+  left: 35.5%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.page-section-title {
+  font-size: 9.6rem;
+  font-weight: 400;
+  font-family: Aboreto;
+  color: rgb(229, 248, 239);
+  white-space: nowrap;
+}
+
+.page-section-title-sub {
+  font-size: 3.2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 500;
+  white-space: nowrap;
+  margin-top: 0.9rem;
 }

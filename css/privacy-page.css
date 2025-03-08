@@ -1,0 +1,77 @@
+.privacy-page-top {
+  margin-top: 4.3rem;
+}
+
+.privacy-page__beginning {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: "Zen Old Mincho";
+}
+
+.privacy-page__items {
+  padding-top: 2.9rem;
+}
+
+.privacy-page__item {
+  margin-top: 4rem;
+}
+
+.privacy-page__item-title-main {
+  font-family: "Zen Old Mincho";
+  font-weight: 700;
+  font-size: 2.4rem;
+  background-color: rgba(229, 248, 239, 0.4);
+  border-bottom: 0.1rem solid rgb(2, 177, 166);
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.privacy-page__item-numbers {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.privacy-page__item-number {
+  margin-top: 4.5rem;
+}
+
+.privacy-page__item-title-sub {
+  font-size: 2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+}
+
+.privacy-page__item-text {
+  font-size: 1.6rem;
+  font-family: "Zen Old Mincho";
+  margin-top: 2.6rem;
+  line-height: 1.6;
+}
+
+.privacy-page__item-text-sub {
+  font-size: 1.6rem;
+  font-family: "Zen Old Mincho";
+  line-height: 1.6;
+}
+
+.privacy-page__links {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Zen Old Mincho";
+  margin-top: 3rem;
+}
+
+.privacy-page__links a {
+  color: rgb(45, 65, 64);
+}
+
+.privacy-page__links a:not(:first-child) {
+  line-height: 2;
+}
+
+.privacy-page__item-end {
+  margin-top: 4rem;
+}
