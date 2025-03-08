@@ -161,13 +161,13 @@
   }
 }
 
-.menu-sp {
+.menu {
   padding-bottom: 8rem;
   text-align: right;
   margin-top: -10rem;
 }
 @media (max-width: 767px) {
-  .menu-sp {
+  .menu {
     margin-top: 0.6rem;
     padding-bottom: 2rem;
   }
