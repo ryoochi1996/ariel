@@ -67,7 +67,12 @@
                     <h2>ドクター</h2>
                 </div>
                 <div class="doctor-page__img">
-                    <img src="img/doctor/doctor.jpg" alt="DR .WATANABE">
+                    <picture>
+                        <!-- ブラウザ幅1023～768pxまでsampleの画像が表示 -->
+                        <source srcset="img/doctor/FVbanner.jpg" media="(max-width: 767px)" type="image/png">
+                        <!-- ブラウザ幅767px～から最小幅までsample2の画像が表示 -->
+                        <img src="img/doctor/doctor.jpg" alt="DR .WATANABE">
+                    </picture>
                 </div>
 
                 <div class="doctor-page__list">
@@ -115,13 +120,14 @@
                           ジュビダームビスタ　バイクロス　認定医
                         </p>
                       </div>
+
                     </div>
                   
                     <div class="doctor-page__profile">
                       <div class="doctor-page__image">
                         <img src="img/doctor/watanabe.jpg" alt="渡邉 光" loading="lazy">
                       </div>
-                      <div class="doctor-page__bio">
+                      <div class="doctor-page__bio sp_n">
                         <p class="doctor-page__bio-title">渡邉院長の生い立ち</p>
                         <p class="doctor-page__bio-text">
                           1991年　岡山県岡山市生まれ<br>
@@ -132,14 +138,22 @@
                     </div>
                   </div>
 
-                  
+                  <div class="doctor-page__bio pc_n">
+                    <p class="doctor-page__bio-title">渡邉院長の生い立ち</p>
+                    <p class="doctor-page__bio-text">
+                      1991年　岡山県岡山市生まれ<br>
+                      体を動かすのが好きで、幼少期は外を駆け回って育ちました。<br>
+                      ジム通いで日々体力作りに励んでいます。
+                    </p>
+                  </div>
+
             </div>
         </section>
 
         <section class="message">
             <div class="message__inner inner">
               <div class="message__content">
-                <div class="title message-title">
+                <div class="title mesage-title">
                     <p>Message</p>
                     <h2>メッセージ</h2>
                 </div>

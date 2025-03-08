@@ -11,6 +11,11 @@
 .doctor-page__img {
   margin-top: 5.8rem;
 }
+@media (max-width: 767px) {
+  .doctor-page__img {
+    margin-top: 2rem;
+  }
+}
 
 .doctor-page__list {
   margin-top: 8rem;
@@ -19,6 +24,15 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 767px) {
+  .doctor-page__list {
+    width: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
 
 .doctor-page__box {
   width: 55rem;
@@ -26,6 +40,16 @@
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 4px 10px 0px rgba(91, 163, 115, 0.2);
   padding: 4rem 5.6rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__box {
+    width: 100%;
+    padding: 1rem 2rem;
+    order: 1;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+  }
 }
 
 .doctor-page__title {
@@ -37,9 +61,19 @@
   font-weight: 700;
   line-height: 170%; /* 3.4rem */
 }
+@media (max-width: 767px) {
+  .doctor-page__title {
+    font-size: 1.6rem;
+  }
+}
 
 .doctor-page__name {
   margin-top: 2.4rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__name {
+    margin-top: 2rem;
+  }
 }
 
 .doctor-page__name-en {
@@ -146,11 +180,27 @@
   top: 3.85rem;
   width: 42rem;
 }
+@media (max-width: 767px) {
+  .doctor-page__profile {
+    position: relative;
+    width: 100%;
+    top: auto;
+  }
+}
 
 .doctor-page__image {
   width: 42rem;
   height: 50rem;
   flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .doctor-page__image {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+    height: auto;
+  }
 }
 
 .doctor-page__bio {
@@ -159,6 +209,14 @@
   border: 1px solid var(--main-color, #02B1A6);
   background: #FFF;
   padding: 1rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__bio {
+    margin-top: 2rem;
+    width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .doctor-page__bio-title {
@@ -181,11 +239,22 @@
   line-height: 160%; /* 2.56rem */
   margin-top: 1.6rem;
 }
+@media (max-width: 767px) {
+  .doctor-page__bio-text {
+    font-size: 1.4rem;
+  }
+}
 
 .message {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
+}
+@media (max-width: 767px) {
+  .message {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 }
 
 .message__content {
