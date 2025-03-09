@@ -59,8 +59,8 @@
 }
 
 .reason-card__item {
-  position: relative; /* ✅ これを追加！ */
-  display: block; /* ✅ `a`タグなので block に */
+  position: relative;
+  display: block;
 }
 
 .reason-card__polygon::before {
@@ -69,7 +69,7 @@
   top: -5.7rem;
   left: 26%;
   transform: translateX(-50%);
-  width: 20.2rem; /* ✅ 画像のサイズに合わせて適切な値を指定 */
+  width: 20.2rem;
   height: 20.2rem;
   background-image: url("../img/beginners/polygon1.png");
   background-size: contain;
@@ -82,7 +82,7 @@
   top: -7rem;
   left: 30%;
   transform: translateX(-50%);
-  width: 20.2rem; /* ✅ こちらも適切なサイズを指定 */
+  width: 20.2rem;
   height: 20.2rem;
   background-image: url("../img/beginners/polygon2.png");
   background-size: contain;
@@ -94,10 +94,10 @@
   font-weight: 400;
   font-family: Aboreto;
   position: absolute;
-  top: 0%; /* 調整可能 */
+  top: 0%;
   left: 26.4%;
   transform: translateX(-50%);
-  // color: rgba(229, 248, 239, 1);
+  color: rgba(229, 248, 239, 1);
 }
 
 .reason-card__text-number {
@@ -105,10 +105,10 @@
   font-weight: 400;
   font-family: Aboreto;
   position: absolute;
-  top: 6.4%; /* 調整可能 */
+  top: 6.4%;
   left: 26.5%;
   transform: translateX(-50%);
-  // color: rgba(229, 248, 239, 1);
+  color: rgba(229, 248, 239, 1);
 }
 
 .reason-card__item-img::before {
@@ -117,8 +117,7 @@
 }
 
 .reason-card__item-img {
-  max-width: 73%; /* 画像の最大幅を設定（テキストより小さく） */
-  // margin: 0 auto; /* 中央揃え */
+  max-width: 73%;
   margin-left: 7.4rem;
 }
 
@@ -130,8 +129,8 @@
 }
 
 .reason-card__body {
-  max-width: 100%; /* テキスト部分の最大幅を指定 */
-  margin: 2rem auto 0; /* 上の余白を調整し、中央揃え */
+  max-width: 100%;
+  margin: 2rem auto 0;
 }
 
 .reason-card__text {
@@ -180,14 +179,12 @@
 
 .flow__heading {
   text-align: center;
-  // margin-bottom: 3rem;
 }
 
 .flow__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // gap: 3rem;
   margin-top: 4rem;
 }
 
@@ -219,7 +216,6 @@
   font-family: Aboreto;
   text-align: center;
   padding: 0 3.6rem 3.9rem 3.6rem;
-  // border-right: 1px solid #00a6a6;
   flex: 0 0 10rem;
 }
 
@@ -229,7 +225,6 @@
   font-family: Aboreto;
   text-align: center;
   padding: 0 3.6rem 3.9rem 3.6rem;
-  // border-right: 1px solid #00a6a6;
   flex: 0 0 10rem;
   align-self: self-start;
   margin-top: 2.9rem;
@@ -241,7 +236,6 @@
   font-family: Aboreto;
   text-align: center;
   padding: 0 3.6rem 6rem 3.6rem;
-  // border-right: 1px solid #00a6a6;
   flex: 0 0 10rem;
 }
 
@@ -288,7 +282,6 @@
   max-width: 28rem;
   margin-left: 2.2rem;
   align-self: flex-start;
-  // border-left: 1px solid #00a6a6;
 }
 
 .flow__card-img-large {
@@ -296,7 +289,6 @@
   max-width: 28rem;
   margin-left: 2.2rem;
   align-self: flex-start;
-  // border-left: 1px solid #00a6a6;
 }
 
 .flow__card-img img {
@@ -316,21 +308,21 @@
 .flow__card-img::before {
   content: "";
   position: absolute;
-  top: 16%; /* 上から配置 */
-  left: 13.1%; /* 左端 */
-  width: 0.1rem; /* 線の太さ */
-  height: 67%; /* 親要素と同じ高さ */
-  background-color: rgba(2, 177, 166, 1); /* 緑色 */
+  top: 16%;
+  left: 13.1%;
+  width: 0.1rem;
+  height: 67%;
+  background-color: rgba(2, 177, 166, 1);
 }
 
 .flow__card-img-large::before {
   content: "";
   position: absolute;
-  top: 6.5%; /* 上から配置 */
-  left: 13.1%; /* 左端 */
-  width: 0.1rem; /* 線の太さ */
-  height: 86.5%; /* 親要素と同じ高さ */
-  background-color: rgba(2, 177, 166, 1); /* 緑色 */
+  top: 6.5%;
+  left: 13.1%;
+  width: 0.1rem;
+  height: 86.5%;
+  background-color: rgba(2, 177, 166, 1);
 }
 
 .flow__card-text {
@@ -360,11 +352,11 @@
 
 .flow__card-description {
   font-size: 1.6rem;
-  color: #666;
+  color: rgba(51, 51, 51, 1);
   line-height: 1.6;
   font-family: Zen Old Mincho;
   margin-top: 2rem;
-  white-space: nowrap; /* ✅ 1行表示を強制 */
+  white-space: nowrap;
 }
 
 .flow__buttons {
@@ -382,7 +374,7 @@
   display: inline-block;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
   letter-spacing: 0.04rem;
   font-family: Zen Old Mincho;
@@ -391,15 +383,15 @@
 }
 
 .flow__button--line {
-  background-color: #00c300;
+  background-color: rgba(6, 199, 85, 1);
 }
 
 .flow__button--web {
-  background-color: #ff6b6b;
+  background-color: rgba(249, 137, 121, 1);
 }
 
 .flow__button--phone {
-  background-color: #f5a623;
+  background-color: rgba(251, 199, 51, 1);
 }
 
 .flow__arrow {
@@ -426,8 +418,8 @@
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 10%; /* 上から配置 */
-  left: 0%; /* 左端 */
+  top: 10%;
+  left: 0%;
 }
 
 .flow__payment-text {
@@ -469,14 +461,19 @@
   margin-top: 1.2rem;
   text-decoration: none;
   outline: none;
-  /*アニメーションの指定*/
   transition: all 0.3s;
   padding: 0.8rem 1.7rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 
   // @include mq("md") {
   //   padding-bottom: 120px;
   // }
+}
+
+.flow__button:hover {
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  border-color: transparent;
 }
 
 .flow__button-consent {
@@ -486,7 +483,6 @@
   margin-top: 0.6rem;
   text-decoration: none;
   outline: none;
-  /*アニメーションの指定*/
   transition: all 0.3s;
   padding: 0.8rem 1.7rem;
   border-radius: 0.5rem;
@@ -507,7 +503,7 @@
   display: inline-block;
   max-width: 24rem;
   width: 100%;
-  padding: 15.5px 57px;
+  padding: 1.55rem 5.7rem;
   font-size: 1.4rem;
   border-radius: 0.2rem;
   color: rgba(2, 177, 166, 1);
@@ -573,7 +569,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%; /* 3.2rem */
+  line-height: 160%;
   @include mq("sp") {
     font-size: 1.6rem;
   }
@@ -756,7 +752,7 @@
   font-size: 2rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%; /* 3.2rem */
+  line-height: 160%;
   @include mq("sp") {
     font-size: 1.6rem;
   }
@@ -774,7 +770,6 @@
 
 .route-card__item {
   max-width: 25rem;
-  // box-shadow: 3px 3px 4px 0px rgba(29, 29, 29, 0.75);
 }
 
 .route-card__item:nth-child(2)::before {
@@ -824,11 +819,8 @@
 }
 
 .route-card__body {
-  // color: $beige;
   margin-top: 1.6rem;
-  // padding-left: 16px;
-  padding-bottom: 16px;
-  // padding-right: 16px;
+  padding-bottom: 1.6rem;
 }
 
 .route-card__text {
