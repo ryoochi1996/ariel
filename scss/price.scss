@@ -1,3 +1,348 @@
 @import '_common';
 
+.price-page {
+    padding-top: 8rem;    
+}
+
+.price-page__inner {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-items__box {
+    padding-top: 1.4rem;
+    padding-bottom: 2rem;
+    padding-left: 8.1rem;
+    padding-right: 8.1rem;
+    border-radius: 2rem;
+    background: #02B1A6;
+    @include mq('sp') {
+        padding: 1.5rem .5rem;
+    }
+}
+
+.price-items__heading {
+    font-size: 2rem;  
+    margin-top: .8rem;
+    @include mq('sp') {
+        margin-top: 1rem;
+    }
+}
+
+
+.price-items__title {
+    color: var(--FFF, #FFF);
+    text-align: center;
+    font-family: "Zen Old Mincho";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.16rem;
+    margin-top: .8rem;
+   
+}
+
+.price-items__subtitle {
+    color: var(--sub-color, #E5F8EF);
+    text-align: center;
+    
+    /* ENGLISH HEADING */
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.6rem */
+    font-variant: all-small-caps;
+    @include mq('sp') {
+        font-size: 1.3rem;
+    }
+
+}
+
+.price-items__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3.05rem;
+    @include mq('sp') {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+}
+
+.price-items__image {
+    width: 25.8rem;
+    @include mq('sp') {
+        width: 100%;
+        height: 18.5rem;
+        img {
+            height: 100%;
+            border-radius: 5rem;
+        }
+    }
+}
+
+.price-items__list-container {
+    @include mq('sp') {
+        width: 100%;
+    }
+}
+
+.price-items__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    @include mq('sp') {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 0;
+        gap: 1rem;
+    }
+    
+}
+
+.price-items__item {
+    a {
+        width: 24rem;
+        height: 4.8rem;
+        border: 1px solid #fff;
+        color: var(--FFF, #FFF);
+        text-align: center;
+        font-family: "Zen Old Mincho";
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 2.24rem */
+        letter-spacing: 0.056rem;
+        padding-left: 1.6rem;
+        display: flex;
+        padding-left: 1.6rem;
+        align-items: center;
+        text-align: left;
+        position: relative;
+        transition: all .3s ease-in-out;
+        @include mq('sp') {
+            width: 100%;
+            gap: 1rem;
+            border: 2px solid #fff;
+            font-size: 1.2rem;
+        }
+        &:hover {
+            opacity: .7;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background: url(../img/price/line.png) no-repeat center center /cover;
+          width: .4rem;
+          height: .8rem;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 1.6rem;
+        }
+    }
+}
+
+.price-items--large {
+    margin-top: 4rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+        .price-items__list-container {
+            order: 2;
+        }
+    }
+}
+
+
+
+.price-table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin-top: 4rem;
+}
+
+.price-table__header {
+    color: var(--text-color, #333);
+    text-align: right;
+    font-family: "Noto Serif JP";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.08rem;
+    border: 1px solid #DDD;
+    background: #F5F3F3;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+}
+
+.price-table__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-table__row {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+}
+
+.price-table__item {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price-table__item:last-child {
+    border-right: none;
+}
+
+.price-table__title {
+    color: var(--text-color, #333);
+    text-align: center;
+    
+    /* 料金表メニューテキスト */
+    font-family: "Noto Serif JP";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+
+}
+
+.price-table__label {
+    color: var(--text-color, #333);
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+}
+
+.price-table__amount {
+    color: var(--text-color, #333);
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12rem;
+    span 
+    {
+        font-size: 1.4rem;
+    }
+}
+
+.price-table__tax {
+    color: var(--text-color, #333);
+    text-align: center;
+    font-family: "Noto Serif JP";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07rem;
+}
+
+@media (max-width: 768px) {
+    .price-table__row {
+        flex-direction: column;
+    }
+
+    .price-table__item {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .price-table__item:last-child {
+        border-bottom: none;
+    }
+}
+
+
+.cosmetic-dermatology 
+{
+    padding-top: 8rem;
+}
+
+
+.page-medical {
+    padding-top: 4rem;
+}
+
+.page-title {
+    border-bottom: 1px solid var(--main-color, #02B1A6);
+    background: rgba(229, 248, 239, 0.40);
+    color: var(--text-color, #333);
+    font-family: "Noto Serif JP";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+
+.page-btn {
+    a {
+        display: flex;
+        width: 24rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 4.8rem;
+        padding: 0.9rem 1.6rem;
+        align-items: center;
+        border: 2px solid var(--main-color, #02B1A6);
+        color: var(--main-color, #02B1A6);
+        text-align: center;
+        font-family: "Zen Old Mincho";
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 160%; /* 2.24rem */
+        letter-spacing: 0.056rem;
+        color: var(--main-color, #02B1A6);
+        position: relative;
+        margin-top: 4rem;
+        transition: .3s;
+        &:hover {
+            opacity: .7;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../img/price/line-page.png) no-repeat center center/cover;
+            width: 0.4rem;
+            height: 0.8rem;
+            flex-shrink: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            right:1.6rem;
+        }   
+    }
+}
+
 
