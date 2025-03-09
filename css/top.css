@@ -773,7 +773,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.333rem;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 @media (max-width: 767px) {
   .insta__box {
@@ -866,8 +866,10 @@
 }
 @media (max-width: 767px) {
   .news__list::after {
-    width: 25.4rem;
-    height: 24.4rem;
+    height: 30.4rem;
+    width: 36.4rem;
+    top: -8.4rem;
+    right: -4.7rem;
   }
 }
 @media (max-width: 767px) {

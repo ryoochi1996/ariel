@@ -196,7 +196,7 @@
 @media (max-width: 767px) {
   .privacy-page__item-text-end {
     font-size: 1.4rem;
-    line-height: 1.56;
+    line-height: 2.3;
   }
 }
 
@@ -252,4 +252,3 @@
     margin-top: 2.4rem;
   }
 }
-/*# sourceMappingURL=privacy-page.css.map */
