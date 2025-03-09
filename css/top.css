@@ -135,12 +135,28 @@
   padding-bottom: 26rem;
   background: url(../img/top/monthly-bg.png) no-repeat center center/contain;
   padding-top: 9.9rem;
+  position: relative;
+}
+.manthly-price::after {
+  content: "";
+  position: absolute;
+  background: url(../img/top/star_bg.png) no-repeat center center/cover;
+  width: 15rem;
+  height: 15rem;
+  bottom: 3.2rem;
+  left: 12rem;
 }
 @media (max-width: 767px) {
   .manthly-price {
-    padding-top: 5.1rem;
+    padding-top: 5.3rem;
     background: url(../img/top/monthly-bg_sp.png) no-repeat center center/cover;
     width: 39rem;
+    height: 45.1rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 767px) {
+  .manthly-price {
+    background: url(../img/top/monthly-bg_sp.png) no-repeat center center/contain;
     height: 47.1rem;
   }
 }
@@ -173,9 +189,21 @@
   }
 }
 
+@media (max-width: 767px) {
+  .menu__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .menu-title {
   display: inline-block;
   text-align: left;
+}
+@media (max-width: 767px) {
+  .menu-title {
+    padding-right: 1rem;
+  }
 }
 @media (max-width: 767px) {
   .menu-title h2 {
@@ -189,6 +217,7 @@
 @media (max-width: 767px) {
   .menu-swiper {
     margin-top: 2.5rem;
+    padding-left: 1rem;
   }
 }
 .menu-swiper .swiper-slide a {
@@ -248,6 +277,11 @@
 .menu-item__link {
   margin-top: 2.9rem;
 }
+@media (max-width: 767px) {
+  .menu-item__link {
+    margin-top: 2.7rem;
+  }
+}
 .menu-item__link p {
   margin-left: 5.35rem;
   color: var(--FFF, #FFF);
@@ -290,10 +324,11 @@
 .doctor {
   padding-top: 2.4rem;
   padding-bottom: 4.9rem;
+  background: url(../img/top/bg.jpg) no-repeat center center/cover;
 }
 @media (max-width: 767px) {
   .doctor {
-    padding-top: 0px;
+    padding-top: 0;
   }
 }
 
@@ -712,6 +747,8 @@
   .insta__list {
     justify-content: center;
     gap: 6.2rem;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -735,6 +772,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.333rem;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   .insta__box {
@@ -754,6 +793,30 @@
   }
 }
 
+.insta__inner {
+  position: relative;
+}
+.insta__inner::after {
+  content: "";
+  position: absolute;
+  background: url(../img/top/maru_bg.png) no-repeat center center/cover;
+  width: 35.9rem;
+  height: 34.4rem;
+  top: 0;
+  left: 0;
+  width: 19.5rem;
+  height: 18.7rem;
+}
+@media (max-width: 767px) {
+  .insta__inner::after {
+    background: url(../img/top/maru_bg_sp.png) no-repeat center center/cover;
+    width: 31.5rem;
+    height: 32.7rem;
+    top: -3.6rem;
+    left: 0.6rem;
+  }
+}
+
 .news {
   padding-top: 4.9rem;
   padding-bottom: 2.4rem;
@@ -762,6 +825,8 @@
   .news {
     padding-top: 0.4rem;
     padding-bottom: 0px;
+    z-index: 2;
+    position: relative;
   }
 }
 
@@ -801,7 +866,8 @@
 }
 @media (max-width: 767px) {
   .news__list::after {
-    display: none;
+    width: 25.4rem;
+    height: 24.4rem;
   }
 }
 @media (max-width: 767px) {
@@ -1114,6 +1180,7 @@
 .access {
   padding-top: 4.1rem;
   padding-bottom: 6rem;
+  background: url(../img/top/bg.jpg) no-repeat center center/cover;
 }
 @media (max-width: 767px) {
   .access {
@@ -1317,7 +1384,7 @@
 }
 @media (max-width: 767px) {
   .calendar {
-    height: 85.5rem;
+    height: 89.5rem;
   }
 }
 
