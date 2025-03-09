@@ -52,7 +52,8 @@
 .reason__cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
   row-gap: 11.9rem;
   margin-top: 10.8rem;
 }
@@ -103,7 +104,7 @@
   font-weight: 400;
   font-family: Aboreto;
   position: absolute;
-  top: 6.8%; /* 調整可能 */
+  top: 6.4%; /* 調整可能 */
   left: 26.5%;
   transform: translateX(-50%);
 }
@@ -122,7 +123,8 @@
   width: 100%;
   height: auto;
   aspect-ratio: 280/291;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .reason-card__body {
@@ -198,6 +200,11 @@
   padding-right: 0;
 }
 
+.flow-card-mid {
+  padding-top: 4rem;
+  padding-bottom: 3.9rem;
+}
+
 .flow__card:not(:first-child) {
   margin-top: 2rem;
 }
@@ -222,6 +229,15 @@
   margin-top: 2.9rem;
 }
 
+.flow__card-number-mid {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Aboreto;
+  text-align: center;
+  padding: 0 3.6rem 6rem 3.6rem;
+  flex: 0 0 10rem;
+}
+
 .flow__card-number span {
   display: block;
   font-size: 3.6rem;
@@ -231,6 +247,14 @@
 }
 
 .flow__card-number-large span {
+  display: block;
+  font-size: 3.6rem;
+  font-weight: 400;
+  font-family: Aboreto;
+  margin-top: 1rem;
+}
+
+.flow__card-number-mid span {
   display: block;
   font-size: 3.6rem;
   font-weight: 400;
@@ -256,13 +280,30 @@
   width: 100%;
   max-width: 28rem;
   margin-left: 2.2rem;
+  align-self: flex-start;
+}
+
+.flow__card-img-large {
+  width: 100%;
+  max-width: 28rem;
+  margin-left: 2.2rem;
+  align-self: flex-start;
 }
 
 .flow__card-img img {
   width: 100%;
   height: auto;
   aspect-ratio: 280/160;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flow__card-img-large img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 280/160;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .flow__card-img::before {
@@ -275,8 +316,26 @@
   background-color: rgb(2, 177, 166); /* 緑色 */
 }
 
+.flow__card-img-large::before {
+  content: "";
+  position: absolute;
+  top: 6.5%; /* 上から配置 */
+  left: 13.1%; /* 左端 */
+  width: 0.1rem; /* 線の太さ */
+  height: 86.5%; /* 親要素と同じ高さ */
+  background-color: rgb(2, 177, 166); /* 緑色 */
+}
+
 .flow__card-text {
   flex: 1;
+}
+
+.flow__card-text-large {
+  padding-top: 5.7rem;
+}
+
+.flow__card-text-mid {
+  padding-top: 0.7rem;
 }
 
 .flow__card-title {
@@ -304,15 +363,7 @@
 .flow__buttons {
   display: flex;
   gap: 0.8rem;
-  margin-top: 2rem;
-}
-
-.flow__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.8rem 1.7rem;
-  border-radius: 0.5rem;
+  margin-top: 0.8rem;
 }
 
 .flow__button-img {
@@ -357,6 +408,7 @@
 
 .flow__payment-item {
   display: flex;
+  position: relative;
 }
 
 .flow__payment-item:not(:first-child) {
@@ -366,6 +418,9 @@
 .flow__payment-img {
   width: 2rem;
   height: 2rem;
+  position: absolute;
+  top: 10%; /* 上から配置 */
+  left: 0%; /* 左端 */
 }
 
 .flow__payment-text {
@@ -373,15 +428,19 @@
   font-weight: 500;
   line-height: 1.6;
   font-family: Zen Old Mincho;
+  padding-left: 3rem;
 }
 
 .flow__payment-card-img {
   width: 43.8rem;
   height: 4.5rem;
+  margin-top: 0.5rem;
 }
 
 .flow-card-large {
-  min-height: 580px;
+  min-height: 5.8rem;
+  padding-top: 3.8rem;
+  padding-bottom: 3rem;
 }
 
 .payment__details {
@@ -389,59 +448,386 @@
   font-weight: 500;
   line-height: 1.6;
   font-family: Zen Old Mincho;
+  margin-top: 0.8rem;
 }
 
 .payment__details li {
-  list-style-type: disc; /* ✔ 黒丸（•）を表示 */
-  list-style-position: inside; /* ✔ テキストと一緒にインデント */
+  padding-left: 0.4rem;
 }
 
 .flow__button {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-top: 19px;
+  margin-top: 1.2rem;
   text-decoration: none;
   outline: none;
   /*アニメーションの指定*/
   transition: all 0.3s;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
 }
 
-.flow__button a:hover {
+.flow__button-consent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0.6rem;
+  text-decoration: none;
+  outline: none;
+  /*アニメーションの指定*/
+  transition: all 0.3s;
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.5rem;
+  padding-left: 0;
+}
+
+.flow__button-consent a:hover {
   box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
   border-color: transparent;
 }
 
-.flow__button a {
+.flow__button-consent a {
   border: 0.2rem solid rgb(2, 177, 166);
   display: inline-block;
-  max-width: 204px;
+  max-width: 24rem;
   width: 100%;
   padding: 15.5px 57px;
   font-size: 1.4rem;
-  border-radius: 6px;
-  text-align: center;
+  border-radius: 0.2rem;
   color: rgb(2, 177, 166);
   position: relative;
   text-decoration: none;
   outline: none;
   font-family: Noto Serif JP;
   letter-spacing: 0.05em;
+  padding-left: 1.4rem;
 }
 
-.flow__button a::after {
+.flow__button-consent a::after {
   position: absolute;
-  top: 54%;
-  right: -12px;
-  width: 7px;
-  height: 7px;
-  margin-top: -4px;
-  -webkit-transform: rotate(45deg);
+  top: 48%;
+  right: -8%;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: -0.4rem;
   transform: rotate(45deg);
-  border-top: 0.1rem solid rgb(2, 177, 166);
-  border-right: 0.1rem solid rgb(2, 177, 166);
+  border-top: 0.2rem solid rgb(2, 177, 166);
+  border-right: 0.2rem solid rgb(2, 177, 166);
   content: "";
   display: inline-block;
   vertical-align: middle;
-  margin-right: 33px;
+  margin-right: 3.3rem;
 }
+
+.follow-treatment {
+  margin-top: -2.5rem;
+}
+
+.access {
+  padding-top: 4.1rem;
+  padding-bottom: 6rem;
+  background: url(../img/beginners/bg.jpg) no-repeat center center/cover;
+  margin-top: 5.4rem;
+}
+@media (max-width: 767px) {
+  .access {
+    padding-top: 2.1rem;
+  }
+}
+
+.access__title {
+  color: var(--main-color, #02b1a6);
+  font-family: "Zen Old Mincho";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 3.2rem */
+}
+@media (max-width: 767px) {
+  .access__title {
+    font-size: 1.6rem;
+  }
+}
+
+.access__list {
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.1rem;
+}
+@media (max-width: 767px) {
+  .access__list {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.access__box {
+  margin-top: 1.6rem;
+  width: 55rem;
+}
+@media (max-width: 767px) {
+  .access__box {
+    width: auto;
+  }
+}
+
+.access__item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding: 1.6rem 0;
+  border-top: 1px solid #e5f8ef;
+}
+@media (max-width: 767px) {
+  .access__item {
+    padding: 1.4rem 0;
+  }
+}
+.access__item:nth-of-type(4) {
+  border-bottom: 1px solid #e5f8ef;
+}
+
+.access__item_head {
+  color: var(--main-color, #02b1a6);
+  /* Subheading Text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.128rem;
+  width: 9.1rem;
+}
+.access__item_text {
+  color: var(--text-color, #333);
+  /* body text base */
+  font-family: "Zen Old Mincho";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 2.56rem */
+}
+.access__item_text a {
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  .access__item_text {
+    font-size: 1.4rem;
+  }
+}
+
+.access__btn {
+  margin-top: 2.5rem;
+  margin-left: auto;
+}
+@media (max-width: 767px) {
+  .access__btn {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .access__left {
+    width: 100%;
+  }
+}
+
+.btn__list {
+  margin-top: 8.1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+@media (max-width: 767px) {
+  .btn__list {
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+}
+.btn__list a {
+  display: flex;
+  width: 22rem;
+  height: 4rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: var(--main-color, #02b1a6);
+  color: var(--FFF, #fff);
+  text-align: center;
+  padding-left: 6.75rem;
+  /* header button text */
+  font-family: "Zen Old Mincho";
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 2.24rem */
+  letter-spacing: 0.056rem;
+  position: relative;
+  transition: 0.3s;
+}
+@media (max-width: 767px) {
+  .btn__list a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.btn__list a:hover {
+  border: 1px solid #02b1a6;
+  background: var(--sub-color, #e5f8ef);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: var(--main-color, #02b1a6);
+}
+.btn__list a:hover::after {
+  border: 1px solid #02b1a6;
+  right: 7.45rem;
+}
+.btn__list a:hover::before {
+  background-color: #02b1a6;
+  right: 6.75rem;
+}
+.btn__list a::after {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex-shrink: 0;
+  border-radius: 2.4rem;
+  border: 1px solid var(--FFF, #fff);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6.75rem;
+  transition: 0.3s;
+}
+.btn__list a::before {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 0.1rem;
+  background-color: #fff;
+  right: 7.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.access__right {
+  width: 60rem;
+  height: 40rem;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .access__right {
+    width: 100%;
+    height: 24.5rem;
+  }
+}
+.access__right iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.route {
+  margin-top: -0.5rem;
+}
+
+.route__title {
+  color: var(--main-color, #02b1a6);
+  font-family: "Zen Old Mincho";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 3.2rem */
+}
+@media (max-width: 767px) {
+  .route__title {
+    font-size: 1.6rem;
+  }
+}
+
+.route__cards {
+  display: grid;
+  margin-top: 2.4rem;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5rem;
+  place-items: center;
+  gap: 6.5rem;
+  position: relative;
+}
+
+.route-card__item {
+  max-width: 25rem;
+}
+
+.route-card__item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 17rem;
+  left: 23.9%;
+  transform: translateX(-50%);
+  width: 2.5rem;
+  height: 5rem;
+  background: url("../img/beginners/arrow2.png") no-repeat center;
+  background-size: contain;
+}
+
+.route-card__item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 17rem;
+  left: 50.3%;
+  transform: translateX(-50%);
+  width: 2.5rem;
+  height: 5rem;
+  background: url("../img/beginners/arrow2.png") no-repeat center;
+  background-size: contain;
+}
+
+.route-card__item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  top: 17rem;
+  left: 76.7%;
+  transform: translateX(-50%);
+  width: 2.5rem;
+  height: 5rem;
+  background: url("../img/beginners/arrow2.png") no-repeat center;
+  background-size: contain;
+}
+
+.route-card__img {
+  width: 100%;
+}
+
+.route-card__img img {
+  aspect-ratio: 250/228;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.route-card__body {
+  margin-top: 1.6rem;
+  padding-bottom: 16px;
+}
+
+.route-card__text {
+  font-family: Zen Old Mincho;
+  font-size: 1.6rem;
+  color: rgb(2, 177, 166);
+  letter-spacing: 0.08rem;
+  line-height: 1.6;
+  font-weight: 700;
+  border-bottom: 0.1rem solid rgb(2, 177, 166);
+  padding-bottom: 0.5rem;
+}
+
+.route-card__text-sub {
+  font-family: Zen Old Mincho;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1.2rem;
+  color: rgb(51, 51, 51);
+}
+/*# sourceMappingURL=beginners-page.css.map */
