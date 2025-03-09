@@ -78,7 +78,7 @@ const swiper = new Swiper(".fv-swiper", {
     breakpoints: {
       // 768px未満の場合
       0: {
-        slidesPerView: 1.22,
+        slidesPerView: 1.18,
       },
       // 768px以上の場合
       768: {
@@ -103,7 +103,7 @@ const swiper = new Swiper(".fv-swiper", {
     breakpoints: {
       // 768px未満の場合
       0: {
-        slidesPerView: 1.28,
+        slidesPerView: 1.3,
       },
       // 768px以上の場合
       768: {
