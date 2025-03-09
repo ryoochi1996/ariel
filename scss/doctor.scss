@@ -1,0 +1,292 @@
+@import '_common';
+
+
+.doctor-section {
+
+}
+
+.doctor-page {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.dotor-page-title {
+    width: 20.7rem;
+    margin: 0 auto;
+}
+
+.doctor-page__img {
+    margin-top: 5.8rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+    }
+}
+
+.doctor-page__list {
+    margin-top: 8rem;
+    position: relative;
+    max-width: 93rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq('sp') {
+        width: 34rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+.doctor-page__box {
+    width: 55rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.70);
+    box-shadow: 0px 4px 10px 0px rgba(91, 163, 115, 0.20);
+    padding: 4rem 5.6rem;
+    @include mq('sp') {
+        width: 100%;
+        padding: 1rem 2rem;
+        order:1;
+        position: relative;
+        z-index: 2;
+        margin-top: 0;
+    }
+}
+
+.doctor-page__title {
+    color: var(--main-color, #02B1A6);
+
+    /* contents headeing */
+    font-family: "Zen Old Mincho";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170%; /* 3.4rem */
+    @include mq('sp') {
+        font-size: 1.6rem;
+    }
+}
+
+.doctor-page__name {
+    margin-top: 2.4rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+    }
+}
+
+.doctor-page__name-en {
+    color: var(--border-color, #CCC);
+
+    /* ENGLISH HEADING */
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 1.6rem */
+    font-variant: all-small-caps;
+  
+}
+
+.doctor-page__name-ja {
+    color: var(--text-color, #333);
+    font-family: "Zen Old Mincho";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.192rem;
+    padding-bottom: 2.4rem;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 4rem;
+        height: .2rem;
+        background-color: #02B1A6;
+        bottom: 0;
+        left: 0;
+
+        
+    }
+}
+
+.doctor-page__social {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 2.4rem;
+
+    a {
+        width: 3rem;
+        transition: all .3s ease-in-out;
+        &:hover {
+            opacity: .7;
+        }
+        &:nth-of-type(3) {
+            width: 2.7rem;
+        }
+    }
+}
+
+.doctor-page__social-link {
+    
+}
+
+.doctor-page__career {
+    margin-top: 2.4rem;
+
+}
+
+.doctor-page__career-title {
+    color: #CCC;
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+}
+
+.doctor-page__career-text {
+    color: var(--text-color, #333);
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+    margin-top: 1.6rem;
+}
+
+.doctor-page__certifications {
+    margin-top: 2.4rem;
+}
+
+.doctor-page__certifications-title {
+    color: #CCC;
+
+/* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+}
+
+.doctor-page__certifications-text {
+    color: var(--text-color, #333);
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+    margin-top: 1.6rem;
+}
+
+.doctor-page__profile {
+    position: absolute;
+    right: 0;
+    top:3.85rem;
+    width: 42rem;
+    @include mq('sp') {
+        position: relative;
+        width: 100%;
+        top: auto;
+    }
+}
+
+.doctor-page__image {
+    width: 42rem;
+    height: 50rem;
+    flex-shrink: 0;
+    @include mq('sp') {
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        order: 1;
+        height: auto;
+    }
+}
+
+.doctor-page__bio {
+    margin-top: 2rem;
+    border-radius: 2rem;
+    border: 1px solid var(--main-color, #02B1A6);
+    background: #FFF;
+    padding: 1rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+        width: 34rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.doctor-page__bio-title {
+    color: var(--main-color, #02B1A6);
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+}
+
+.doctor-page__bio-text {
+    color: var(--text-color, #333);
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+    margin-top: 1.6rem;
+    @include mq('sp') {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+.message {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
+    @include mq('sp') {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
+
+.message__inner {
+
+}
+
+.message__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    align-items: flex-start;
+    @include mq('sp') {
+        flex-direction: column;
+
+    }
+}
+
+
+.message__text {
+    color: var(--text-color, #333);
+
+    /* body text base */
+    font-family: "Zen Old Mincho";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 2.56rem */
+}
+

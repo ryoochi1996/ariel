@@ -2,6 +2,10 @@
 
 .privacy-page-top {
   margin-top: 4.3rem;
+
+  @include mq("sp") {
+    margin-top: 4rem;
+  }
 }
 
 .privacy-page__beginning {
@@ -9,18 +13,41 @@
   line-height: 1.6;
   font-weight: 500;
   font-family: "Zen Old Mincho";
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    line-height: 1.58;
+  }
 }
 
 .privacy-page__items {
   padding-top: 2.9rem;
+
+  @include mq("sp") {
+    padding-top: 0.8rem;
+  }
 }
 
 .privacy-page__item {
   margin-top: 4rem;
 }
 
+.privacy-page__item:nth-child(2) {
+  margin-top: 4.2rem;
+  @include mq("sp") {
+    margin-top: 1.8rem;
+  }
+}
+
+.privacy-page__item:nth-child(3) {
+  margin-top: 4.2rem;
+
+  @include mq("sp") {
+    margin-top: 2.5rem;
+  }
+}
+
 .privacy-page__item-title-main {
-  // font-family: Noto Serif JP;
   font-family: "Zen Old Mincho";
   font-weight: 700;
   font-size: 2.4rem;
@@ -29,16 +56,85 @@
   padding-left: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+
+  @include mq("sp") {
+    font-size: 2rem;
+    letter-spacing: 0.16rem;
+    padding-right: 3rem;
+  }
+}
+
+.privacy-page__item:nth-child(2) .privacy-page__item-title-main {
+  @include mq("sp") {
+    line-height: 3rem; /* 行間を調整 */
+  }
 }
 
 .privacy-page__item-numbers {
   list-style-type: none;
   padding-left: 0;
-  // margin-top: 4.5rem;
+}
+
+.privacy-page__item-numbers-2nd {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.privacy-page__item-numbers-3rd {
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .privacy-page__item-number {
   margin-top: 4.5rem;
+
+  @include mq("sp") {
+    margin-top: 2.5rem;
+  }
+}
+
+.privacy-page__item-number:nth-child(2) {
+  @include mq("sp") {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number:nth-child(3) {
+  @include mq("sp") {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-2nd {
+  margin-top: 4.5rem;
+
+  @include mq("sp") {
+    margin-top: 2rem;
+  }
+}
+
+.privacy-page__item-number-2nd:nth-child(2) {
+  margin-top: 4.3rem;
+
+  @include mq("sp") {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-2nd:nth-child(3) {
+  margin-top: 5rem;
+
+  @include mq("sp") {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-3rd {
+  margin-top: 4.2rem;
+
+  @include mq("sp") {
+    margin-top: 2.4rem;
+  }
 }
 
 .privacy-page__item-title-sub {
@@ -46,6 +142,23 @@
   font-family: "Zen Old Mincho";
   font-weight: 700;
   letter-spacing: 0.15rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
+
+.privacy-page__item-end-title-sub {
+  font-size: 2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
 }
 
 .privacy-page__item-text {
@@ -53,6 +166,23 @@
   font-family: "Zen Old Mincho";
   margin-top: 2.6rem;
   line-height: 1.6;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    line-height: 1.56;
+  }
+}
+
+.privacy-page__item-text-end {
+  font-size: 1.6rem;
+  font-family: "Zen Old Mincho";
+  margin-top: 2.6rem;
+  line-height: 1.6;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    line-height: 2.3;
+  }
 }
 
 .privacy-page__item-text-sub {
@@ -60,6 +190,11 @@
   font-family: "Zen Old Mincho";
   // margin-top: 2.6rem;
   line-height: 1.6;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    line-height: 1.57;
+  }
 }
 
 .privacy-page__links {
@@ -67,16 +202,48 @@
   font-weight: 500;
   font-family: "Zen Old Mincho";
   margin-top: 3rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+    // word-break: break-word; /* 単語の適切な位置で改行 */
+    // overflow-wrap: break-word; /* 古いブラウザ対応 */
+    // display: block; /* 1つのリンクごとに改行 */
+  }
 }
 
-.privacy-page__links a {
+// .privacy-page__links a {
+//   @include mq("sp") {
+//     word-break: break-word;
+//     overflow-wrap: break-word;
+//   }
+// }
+
+.privacy-page__links-custom {
   color: rgba(45, 65, 64, 1);
+
+  @include mq("sp") {
+    line-height: 1.5;
+  }
 }
 
-.privacy-page__links a:not(:first-child) {
-  line-height: 2;
+.privacy-page__links-custom:not(:first-child) {
+  display: block;
+  margin-top: 1rem;
+
+  @include mq("sp") {
+    margin-top: 0.2rem;
+  }
 }
+
+// .privacy-page__links a:not(:first-child) {
+//   line-height: 2;
+// }
 
 .privacy-page__item-end {
-  margin-top: 4rem;
+  margin-top: 4.4rem;
+
+  @include mq("sp") {
+    margin-top: 2.4rem;
+  }
 }
