@@ -1,5 +1,11 @@
+@charset "UTF-8";
 .privacy-page-top {
   margin-top: 4.3rem;
+}
+@media (max-width: 767px) {
+  .privacy-page-top {
+    margin-top: 4rem;
+  }
 }
 
 .privacy-page__beginning {
@@ -8,13 +14,42 @@
   font-weight: 500;
   font-family: "Zen Old Mincho";
 }
+@media (max-width: 767px) {
+  .privacy-page__beginning {
+    font-size: 1.4rem;
+    line-height: 1.58;
+  }
+}
 
 .privacy-page__items {
   padding-top: 2.9rem;
 }
+@media (max-width: 767px) {
+  .privacy-page__items {
+    padding-top: 0.8rem;
+  }
+}
 
 .privacy-page__item {
   margin-top: 4rem;
+}
+
+.privacy-page__item:nth-child(2) {
+  margin-top: 4.2rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item:nth-child(2) {
+    margin-top: 1.8rem;
+  }
+}
+
+.privacy-page__item:nth-child(3) {
+  margin-top: 4.2rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item:nth-child(3) {
+    margin-top: 2.5rem;
+  }
 }
 
 .privacy-page__item-title-main {
@@ -27,14 +62,90 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+@media (max-width: 767px) {
+  .privacy-page__item-title-main {
+    font-size: 2rem;
+    letter-spacing: 0.16rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy-page__item:nth-child(2) .privacy-page__item-title-main {
+    line-height: 3rem; /* 行間を調整 */
+  }
+}
 
 .privacy-page__item-numbers {
   list-style-type: none;
   padding-left: 0;
 }
 
+.privacy-page__item-numbers-2nd {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.privacy-page__item-numbers-3rd {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 .privacy-page__item-number {
   margin-top: 4.5rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-number {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy-page__item-number:nth-child(2) {
+    margin-top: 2.3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy-page__item-number:nth-child(3) {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-2nd {
+  margin-top: 4.5rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-number-2nd {
+    margin-top: 2rem;
+  }
+}
+
+.privacy-page__item-number-2nd:nth-child(2) {
+  margin-top: 4.3rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-number-2nd:nth-child(2) {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-2nd:nth-child(3) {
+  margin-top: 5rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-number-2nd:nth-child(3) {
+    margin-top: 2.3rem;
+  }
+}
+
+.privacy-page__item-number-3rd {
+  margin-top: 4.2rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-number-3rd {
+    margin-top: 2.4rem;
+  }
 }
 
 .privacy-page__item-title-sub {
@@ -43,6 +154,25 @@
   font-weight: 700;
   letter-spacing: 0.15rem;
 }
+@media (max-width: 767px) {
+  .privacy-page__item-title-sub {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
+
+.privacy-page__item-end-title-sub {
+  font-size: 2rem;
+  font-family: "Zen Old Mincho";
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-end-title-sub {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
 
 .privacy-page__item-text {
   font-size: 1.6rem;
@@ -50,11 +180,36 @@
   margin-top: 2.6rem;
   line-height: 1.6;
 }
+@media (max-width: 767px) {
+  .privacy-page__item-text {
+    font-size: 1.4rem;
+    line-height: 1.56;
+  }
+}
+
+.privacy-page__item-text-end {
+  font-size: 1.6rem;
+  font-family: "Zen Old Mincho";
+  margin-top: 2.6rem;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-text-end {
+    font-size: 1.4rem;
+    line-height: 1.56;
+  }
+}
 
 .privacy-page__item-text-sub {
   font-size: 1.6rem;
   font-family: "Zen Old Mincho";
   line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .privacy-page__item-text-sub {
+    font-size: 1.4rem;
+    line-height: 1.57;
+  }
 }
 
 .privacy-page__links {
@@ -63,15 +218,38 @@
   font-family: "Zen Old Mincho";
   margin-top: 3rem;
 }
-
-.privacy-page__links a {
-  color: rgb(45, 65, 64);
+@media (max-width: 767px) {
+  .privacy-page__links {
+    font-size: 1.4rem;
+    margin-top: 2.5rem;
+  }
 }
 
-.privacy-page__links a:not(:first-child) {
-  line-height: 2;
+.privacy-page__links-custom {
+  color: rgb(45, 65, 64);
+}
+@media (max-width: 767px) {
+  .privacy-page__links-custom {
+    line-height: 1.5;
+  }
+}
+
+.privacy-page__links-custom:not(:first-child) {
+  display: block;
+  margin-top: 1rem;
+}
+@media (max-width: 767px) {
+  .privacy-page__links-custom:not(:first-child) {
+    margin-top: 0.2rem;
+  }
 }
 
 .privacy-page__item-end {
-  margin-top: 4rem;
+  margin-top: 4.4rem;
 }
+@media (max-width: 767px) {
+  .privacy-page__item-end {
+    margin-top: 2.4rem;
+  }
+}
+/*# sourceMappingURL=privacy-page.css.map */
