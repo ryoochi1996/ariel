@@ -1,11 +1,18 @@
 .doctor-page {
-  padding-top: 4rem;
+  padding-top: 2.4rem;
   padding-bottom: 4rem;
+}
+@media (max-width: 767px) {
+  .doctor-page {
+    padding-top: 4.4rem;
+    padding-bottom: 3rem;
+  }
 }
 
 .dotor-page-title {
-  width: 20.7rem;
+  width: 26.7rem;
   margin: 0 auto;
+  width: 9.3rem;
 }
 
 .doctor-page__img {
@@ -48,7 +55,7 @@
     order: 1;
     position: relative;
     z-index: 2;
-    margin-top: 0;
+    margin-top: -9.3rem;
   }
 }
 
@@ -113,6 +120,11 @@
   gap: 2.4rem;
   margin-top: 2.4rem;
 }
+@media (max-width: 767px) {
+  .doctor-page__social {
+    margin-top: 1.8rem;
+  }
+}
 .doctor-page__social a {
   width: 3rem;
   transition: all 0.3s ease-in-out;
@@ -126,6 +138,11 @@
 
 .doctor-page__career {
   margin-top: 2.4rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__career {
+    margin-top: 2rem;
+  }
 }
 
 .doctor-page__career-title {
@@ -148,9 +165,20 @@
   line-height: 160%; /* 2.56rem */
   margin-top: 1.6rem;
 }
+@media (max-width: 767px) {
+  .doctor-page__career-text {
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+  }
+}
 
 .doctor-page__certifications {
   margin-top: 2.4rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__certifications {
+    margin-top: 2rem;
+  }
 }
 
 .doctor-page__certifications-title {
@@ -172,6 +200,11 @@
   font-weight: 500;
   line-height: 160%; /* 2.56rem */
   margin-top: 1.6rem;
+}
+@media (max-width: 767px) {
+  .doctor-page__certifications-text {
+    font-size: 1.4rem;
+  }
 }
 
 .doctor-page__profile {
@@ -196,6 +229,7 @@
 @media (max-width: 767px) {
   .doctor-page__image {
     width: 30rem;
+    height: 38rem;
     margin-left: auto;
     margin-right: auto;
     order: 1;
@@ -242,18 +276,25 @@
 @media (max-width: 767px) {
   .doctor-page__bio-text {
     font-size: 1.4rem;
+    margin-top: 1rem;
   }
 }
 
 .message {
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
-  background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
 }
 @media (max-width: 767px) {
   .message {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 1.7rem;
+    margin-right: 1.7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .message__inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -262,10 +303,25 @@
   justify-content: space-between;
   gap: 10rem;
   align-items: flex-start;
+  background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
+  padding-top: 0.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 767px) {
   .message__content {
     flex-direction: column;
+    gap: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .mesage-title {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -276,5 +332,40 @@
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 160%; /* 2.56rem */
+  line-height: 162%; /* 2.56rem */
+  padding-top: 1.6rem;
+}
+@media (max-width: 767px) {
+  .message__text {
+    font-size: 1.4rem;
+    line-height: 157%;
+  }
+}
+
+.kato .doctor-page__box {
+  margin-left: auto;
+}
+.kato .doctor-page__profile {
+  right: auto;
+  left: 0;
+}
+.kato .doctor-page__list {
+  margin-top: 6rem;
+  padding-bottom: 12rem;
+}
+@media (max-width: 767px) {
+  .kato .doctor-page__list {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.sub-page-mv__title {
+  left: 25.5%;
+}
+
+@media (max-width: 767px) {
+  .message02 {
+    padding-top: 4.3rem;
+  }
 }

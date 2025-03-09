@@ -1,18 +1,20 @@
 @import '_common';
 
-
-.doctor-section {
-
-}
-
 .doctor-page {
-    padding-top: 4rem;
+    padding-top: 2.4rem;
     padding-bottom: 4rem;
+    @include mq('sp') {
+        padding-top: 4.4rem;
+        padding-bottom: 3rem;
+
+    }
 }
 
 .dotor-page-title {
-    width: 20.7rem;
+    width: 26.7rem;
     margin: 0 auto;
+    width: 9.3rem;
+    
 }
 
 .doctor-page__img {
@@ -49,7 +51,7 @@
         order:1;
         position: relative;
         z-index: 2;
-        margin-top: 0;
+        margin-top: -9.3rem;
     }
 }
 
@@ -114,6 +116,9 @@
     display: flex;
     gap: 2.4rem;
     margin-top: 2.4rem;
+    @include mq('sp') {
+        margin-top: 1.8rem;
+    }
 
     a {
         width: 3rem;
@@ -127,12 +132,12 @@
     }
 }
 
-.doctor-page__social-link {
-    
-}
 
 .doctor-page__career {
     margin-top: 2.4rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+    }
 
 }
 
@@ -157,10 +162,17 @@
     font-weight: 500;
     line-height: 160%; /* 2.56rem */
     margin-top: 1.6rem;
+    @include mq('sp') {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+    }
 }
 
 .doctor-page__certifications {
     margin-top: 2.4rem;
+    @include mq('sp') {
+        margin-top: 2rem;
+    }
 }
 
 .doctor-page__certifications-title {
@@ -184,6 +196,10 @@
     font-weight: 500;
     line-height: 160%; /* 2.56rem */
     margin-top: 1.6rem;
+    @include mq('sp') {
+        font-size: 1.4rem;
+
+    }
 }
 
 .doctor-page__profile {
@@ -204,6 +220,7 @@
     flex-shrink: 0;
     @include mq('sp') {
         width: 30rem;
+        height: 38rem;
         margin-left: auto;
         margin-right: auto;
         order: 1;
@@ -248,23 +265,28 @@
     margin-top: 1.6rem;
     @include mq('sp') {
         font-size: 1.4rem;
+        margin-top: 1rem;
     }
 }
 
 
 
 .message {
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2rem;
-    background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
     @include mq('sp') {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        margin-left: 1.7rem;
+        margin-right: 1.7rem;
+
     }
 }
 
-.message__inner {
 
+.message__inner {
+   @include mq('sp') {
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
 }
 
 .message__content {
@@ -272,12 +294,27 @@
     justify-content: space-between;
     gap: 10rem;
     align-items: flex-start;
+    background: linear-gradient(180deg, #FFF 0%, var(--sub-color, #E5F8EF) 100%);
+    padding-top: .3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     @include mq('sp') {
         flex-direction: column;
+        gap: .4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
 
     }
 }
 
+
+.mesage-title {
+    @include mq('sp') {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 .message__text {
     color: var(--text-color, #333);
@@ -287,6 +324,40 @@
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 160%; /* 2.56rem */
+    line-height: 162%; /* 2.56rem */
+    padding-top: 1.6rem;  
+    @include mq('sp') {
+        font-size: 1.4rem;
+        line-height: 157%;
+    } 
 }
 
+.kato {
+    .doctor-page__box {
+        margin-left: auto;
+    }
+
+    .doctor-page__profile {
+        right: auto;
+        left: 0;
+    }
+
+    .doctor-page__list {
+        margin-top: 6rem;
+        padding-bottom: 12rem;
+        @include mq('sp') {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.sub-page-mv__title {
+    left: 25.5%;
+}
+
+.message02 {
+    @include mq('sp') {
+        padding-top: 4.3rem;
+    }
+}
