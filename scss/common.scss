@@ -98,6 +98,11 @@ img {
   height: 35rem;
   margin-top: 1.5rem;
   border-bottom: 2px solid var(--headergradation, #02b1a6);
+
+  @include mq("sp") {
+    height: 21.4rem;
+    margin-top: 8.3rem; //ヘッダーぶん
+  }
 }
 
 .sub-page-mv__inner {
@@ -122,6 +127,10 @@ img {
   left: 35.5%;
   transform: translate(-50%, -50%);
   z-index: 1;
+
+  @include mq("sp") {
+    top: 48%;
+  }
 }
 
 .page-section-title {
@@ -130,6 +139,10 @@ img {
   font-family: Aboreto;
   color: rgba(229, 248, 239, 1);
   white-space: nowrap;
+
+  @include mq("sp") {
+    font-size: 4.8rem;
+  }
 }
 
 .page-section-title-sub {
@@ -138,10 +151,12 @@ img {
   font-weight: 500;
   white-space: nowrap;
   margin-top: 0.9rem;
-}
 
+  @include mq("sp") {
+    font-size: 2rem;
+  }
+}
 
 body.no-scroll {
   overflow: hidden;
 }
-

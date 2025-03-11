@@ -2,10 +2,18 @@
 
 .beginners-page-top {
   margin-top: 6.7rem;
+
+  @include mq("sp") {
+    margin-top: 4.4rem;
+  }
 }
 
 .beginners-guide-title {
   left: 39%;
+
+  @include mq("sp") {
+    left: 40%;
+  }
 }
 
 .beginners__title {
@@ -32,10 +40,20 @@
   margin-top: 3.5rem;
   font-family: "Zen Old Mincho";
   line-height: 1.6;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    line-height: 1.56;
+  }
 }
 
 .reason-top {
   margin-top: 15rem;
+
+  @include mq("sp") {
+    margin-top: 4.5rem;
+  }
 }
 
 .reason__title {
@@ -56,11 +74,22 @@
   column-gap: 2.5rem;
   row-gap: 11.9rem;
   margin-top: 10.8rem;
+
+  @include mq("sp") {
+    display: block;
+    margin-top: 7.8rem;
+  }
 }
 
 .reason-card__item {
   position: relative;
   display: block;
+}
+
+.reason-card__item:not(:first-child) {
+  @include mq("sp") {
+    margin-top: 11rem;
+  }
 }
 
 .reason-card__polygon::before {
@@ -74,6 +103,13 @@
   background-image: url("../img/beginners/polygon1.png");
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq("sp") {
+    width: 16rem;
+    height: 16rem;
+    top: -4.8rem;
+    left: 24.3%;
+  }
 }
 
 .reason-card__polygon::after {
@@ -87,6 +123,13 @@
   background-image: url("../img/beginners/polygon2.png");
   background-size: contain;
   background-repeat: no-repeat;
+
+  @include mq("sp") {
+    width: 16rem;
+    height: 16rem;
+    top: -6rem;
+    left: 27%;
+  }
 }
 
 .reason-card__text-main {
@@ -98,6 +141,13 @@
   left: 26.4%;
   transform: translateX(-50%);
   color: rgba(229, 248, 239, 1);
+  z-index: 1;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    top: -2%;
+    left: 24%;
+  }
 }
 
 .reason-card__text-number {
@@ -109,6 +159,13 @@
   left: 26.5%;
   transform: translateX(-50%);
   color: rgba(229, 248, 239, 1);
+  z-index: 1;
+
+  @include mq("sp") {
+    font-size: 3.2rem;
+    top: 4.7%;
+    left: 24.2%;
+  }
 }
 
 .reason-card__item-img::before {
@@ -119,6 +176,11 @@
 .reason-card__item-img {
   max-width: 73%;
   margin-left: 7.4rem;
+
+  @include mq("sp") {
+    max-width: 76%;
+    margin-left: 4.5rem;
+  }
 }
 
 .reason-card__item-img img {
@@ -140,6 +202,12 @@
   font-family: "Zen Old Mincho";
   color: rgba(2, 177, 166, 1);
   text-align: center;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .reason-card__text-sub {
@@ -148,10 +216,21 @@
   line-height: 1.65;
   font-family: "Zen Old Mincho";
   margin-top: 2rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    max-width: 35rem;
+    margin: 1.9rem auto;
+    line-height: 1.55;
+  }
 }
 
 .flow-top {
   margin-top: 14.3rem;
+
+  @include mq("sp") {
+    margin-top: 10.3rem;
+  }
 }
 
 .flow__title {
@@ -186,6 +265,10 @@
   flex-direction: column;
   align-items: center;
   margin-top: 4rem;
+
+  @include mq("sp") {
+    margin-top: 2rem;
+  }
 }
 
 .flow__card {
@@ -199,15 +282,47 @@
   padding-top: 3.8rem;
   margin-bottom: 3rem;
   padding-right: 0;
+
+  @include mq("sp") {
+    display: block;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.9rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.flow__card-step {
+  display: flex;
+}
+
+.flow__card-step-large {
+  display: flex;
+}
+
+.flow__card-step-mid {
+  display: flex;
 }
 
 .flow-card-mid {
   padding-top: 4rem;
   padding-bottom: 3.9rem;
+  align-items: flex-start;
+
+  @include mq("sp") {
+    padding-top: 2rem;
+    padding-bottom: 1.7rem;
+    margin-bottom: 0;
+  }
 }
 
 .flow__card:not(:first-child) {
   margin-top: 2rem;
+
+  @include mq("sp") {
+    margin-top: 2.05rem;
+  }
 }
 
 .flow__card-number {
@@ -215,8 +330,16 @@
   font-weight: 400;
   font-family: Aboreto;
   text-align: center;
-  padding: 0 3.6rem 3.9rem 3.6rem;
+  padding: 2.9rem 3.6rem 3.9rem 3.6rem;
   flex: 0 0 10rem;
+  // border-right: 1px solid #00a6a6;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+  }
 }
 
 .flow__card-number-large {
@@ -228,6 +351,14 @@
   flex: 0 0 10rem;
   align-self: self-start;
   margin-top: 2.9rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+    margin-top: 0rem;
+  }
 }
 
 .flow__card-number-mid {
@@ -237,6 +368,15 @@
   text-align: center;
   padding: 0 3.6rem 6rem 3.6rem;
   flex: 0 0 10rem;
+  margin-top: 2.8rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-top: 3rem;
+    margin-top: 0;
+  }
 }
 
 .flow__card-number span {
@@ -245,6 +385,11 @@
   font-weight: 400;
   font-family: Aboreto;
   margin-top: 1rem;
+
+  @include mq("sp") {
+    font-size: 2.4rem;
+    margin-top: 1.7rem;
+  }
 }
 
 .flow__card-number-large span {
@@ -253,6 +398,11 @@
   font-weight: 400;
   font-family: Aboreto;
   margin-top: 1rem;
+
+  @include mq("sp") {
+    font-size: 2.4rem;
+    margin-top: 1.7rem;
+  }
 }
 
 .flow__card-number-mid span {
@@ -261,6 +411,11 @@
   font-weight: 400;
   font-family: Aboreto;
   margin-top: 1rem;
+
+  @include mq("sp") {
+    font-size: 2.4rem;
+    margin-top: 1.7rem;
+  }
 }
 
 .flow__card-content {
@@ -268,6 +423,7 @@
   align-items: center;
   gap: 2rem;
   flex: 1;
+  margin-left: 2rem;
 }
 
 .flow__card-content-large {
@@ -275,6 +431,24 @@
   align-items: center;
   gap: 2rem;
   flex: 1;
+  margin-left: 2rem;
+
+  @include mq("sp") {
+    display: block;
+    margin-left: 3rem;
+  }
+}
+
+.flow__card-content-treatment {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  margin-left: 2rem;
+
+  @include mq("sp") {
+    margin-left: -1rem;
+  }
 }
 
 .flow__card-img {
@@ -282,6 +456,21 @@
   max-width: 28rem;
   margin-left: 2.2rem;
   align-self: flex-start;
+
+  @include mq("sp") {
+    margin-left: 0;
+  }
+}
+
+.flow__card-img-reception {
+  width: 100%;
+  max-width: 28rem;
+  margin-left: 2.2rem;
+  align-self: flex-start;
+
+  @include mq("sp") {
+    margin-left: 0;
+  }
 }
 
 .flow__card-img-large {
@@ -289,6 +478,10 @@
   max-width: 28rem;
   margin-left: 2.2rem;
   align-self: flex-start;
+
+  @include mq("sp") {
+    margin-left: 1rem;
+  }
 }
 
 .flow__card-img img {
@@ -313,6 +506,30 @@
   width: 0.1rem;
   height: 67%;
   background-color: rgba(2, 177, 166, 1);
+
+  @include mq("sp") {
+    top: 5%;
+    left: 28.5%;
+    width: 0.1rem;
+    height: 36.5%;
+  }
+}
+
+.flow__card-img-reception::before {
+  content: "";
+  position: absolute;
+  top: 16%;
+  left: 13.1%;
+  width: 0.1rem;
+  height: 67%;
+  background-color: rgba(2, 177, 166, 1);
+
+  @include mq("sp") {
+    top: 6%;
+    left: 28.5%;
+    width: 0.1rem;
+    height: 41.4%;
+  }
 }
 
 .flow__card-img-large::before {
@@ -323,6 +540,13 @@
   width: 0.1rem;
   height: 86.5%;
   background-color: rgba(2, 177, 166, 1);
+
+  @include mq("sp") {
+    top: 2.5%;
+    left: 28.5%;
+    width: 0.1rem;
+    height: 16.6%;
+  }
 }
 
 .flow__card-text {
@@ -331,6 +555,10 @@
 
 .flow__card-text-large {
   padding-top: 5.7rem;
+
+  @include mq("sp") {
+    padding-top: 0rem;
+  }
 }
 
 .flow__card-text-mid {
@@ -344,10 +572,20 @@
   font-family: Zen Old Mincho;
   color: #00a6a6;
   margin-top: -0.5rem;
+
+  @include mq("sp") {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
 }
 
 .follow-reception {
   margin-top: -5.5rem;
+
+  @include mq("sp") {
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .flow__card-description {
@@ -357,17 +595,64 @@
   font-family: Zen Old Mincho;
   margin-top: 2rem;
   white-space: nowrap;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+    line-height: 1.58;
+  }
+}
+
+.flow__card-description-large {
+  font-size: 1.6rem;
+  color: rgba(51, 51, 51, 1);
+  line-height: 1.6;
+  font-family: Zen Old Mincho;
+  margin-top: 2rem;
+  white-space: nowrap;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 1.9rem;
+    line-height: 1.58;
+  }
+}
+
+.flow__card-description-mid {
+  font-size: 1.6rem;
+  color: rgba(51, 51, 51, 1);
+  line-height: 1.6;
+  font-family: Zen Old Mincho;
+  margin-top: 2rem;
+  white-space: nowrap;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    line-height: 1.58;
+  }
 }
 
 .flow__buttons {
   display: flex;
   gap: 0.8rem;
-  margin-top: 0.8rem;
+  margin-top: 2rem;
+
+  @include mq("sp") {
+    gap: 1.8rem;
+    margin-top: 1.9rem;
+  }
 }
 
 .flow__button-img {
   width: 3.2rem;
   height: 3.2rem;
+
+  @include mq("sp") {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: auto;
+  }
 }
 
 .flow__button-title {
@@ -380,6 +665,12 @@
   font-family: Zen Old Mincho;
   line-height: 1.6;
   margin-left: 1rem;
+
+  @include mq("sp") {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }
 
 .flow__button--line {
@@ -399,6 +690,11 @@
   height: 4rem;
   background: url("../img/beginners/arrow.png") no-repeat center;
   background-size: contain;
+
+  @include mq("sp") {
+    width: 5rem;
+    height: 2rem;
+  }
 }
 
 .flow__payment-list {
@@ -412,6 +708,10 @@
 
 .flow__payment-item:not(:first-child) {
   margin-top: 1.1rem;
+
+  @include mq("sp") {
+    margin-top: 1rem;
+  }
 }
 
 .flow__payment-img {
@@ -428,18 +728,35 @@
   line-height: 1.6;
   font-family: Zen Old Mincho;
   padding-left: 3rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+  }
 }
 
 .flow__payment-card-img {
   width: 43.8rem;
   height: 4.5rem;
   margin-top: 0.5rem;
+
+  @include mq("sp") {
+    width: 29rem;
+    height: 3rem;
+  }
 }
 
 .flow-card-large {
   min-height: 5.8rem;
   padding-top: 3.8rem;
   padding-bottom: 3rem;
+  align-items: flex-start;
+
+  @include mq("sp") {
+    padding-bottom: 1.4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.9rem;
+  }
 }
 
 .payment__details {
@@ -448,17 +765,28 @@
   line-height: 1.6;
   font-family: Zen Old Mincho;
   margin-top: 0.8rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 0.4rem;
+    list-style-position: inside;
+    padding-left: 0.8rem;
+  }
 }
 
 .payment__details li {
   padding-left: 0.4rem;
+
+  @include mq("sp") {
+    text-indent: -2rem;
+    margin-left: 0.9rem;
+  }
 }
 
 .flow__button {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 1.2rem;
   text-decoration: none;
   outline: none;
   transition: all 0.3s;
@@ -466,9 +794,10 @@
   border-radius: 0.5rem;
   cursor: pointer;
 
-  // @include mq("md") {
-  //   padding-bottom: 120px;
-  // }
+  @include mq("sp") {
+    display: block;
+    padding: 0.8rem 1.6rem;
+  }
 }
 
 .flow__button:hover {
@@ -488,9 +817,9 @@
   border-radius: 0.5rem;
   padding-left: 0;
 
-  // @include mq("md") {
-  //   padding-bottom: 120px;
-  // }
+  @include mq("sp") {
+    padding-bottom: 0.6rem;
+  }
 }
 
 .flow__button-consent a:hover {
@@ -514,15 +843,11 @@
   letter-spacing: 0.05em;
   padding-left: 1.4rem;
 
-  // @include mq("md") {
-  //   font-size: 14px;
-  //   line-height: 1.448;
-  //   letter-spacing: 0.05em;
-  //   padding: 14px 47px;
-  //   max-width: 173px;
-  //   height: 48px;
-  //   margin-top: 10px;
-  // }
+  @include mq("sp") {
+    max-width: 17.5rem;
+    font-size: 1.2rem;
+    padding-bottom: 1.7rem;
+  }
 }
 
 .flow__button-consent a::after {
@@ -541,16 +866,27 @@
   vertical-align: middle;
   margin-right: 3.3rem;
 
-  // @include mq("md") {
-  //   margin-right: 32px;
-  //   width: 9px;
-  //   height: 9px;
-  //   top: 52%;
-  // }
+  @include mq("sp") {
+    top: 52%;
+    right: -9%;
+    width: 0.5rem;
+    height: 0.5rem;
+  }
 }
 
 .follow-treatment {
   margin-top: -2.5rem;
+
+  @include mq("sp") {
+    margin-top: 2rem;
+  }
+}
+
+.follow-after {
+  @include mq("sp") {
+    margin-top: 0.1rem;
+    letter-spacing: 0.1rem;
+  }
 }
 
 .access {
@@ -744,6 +1080,10 @@
 
 .route {
   margin-top: -0.5rem;
+
+  @include mq("sp") {
+    margin-top: 3.9rem;
+  }
 }
 
 .route__title {
@@ -766,46 +1106,71 @@
   place-items: center;
   gap: 6.5rem;
   position: relative;
+  overflow: visible;
+
+  @include mq("sp") {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .route-card__item {
   max-width: 25rem;
+  position: relative;
 }
 
-.route-card__item:nth-child(2)::before {
+.route-card__item:not(:first-child) {
+  @include mq("sp") {
+    margin-top: 0.9rem;
+  }
+}
+
+.route-card__item:nth-of-type(2)::before {
   content: "";
   position: absolute;
   top: 17rem;
-  left: 23.9%;
+  left: -12.1%;
   transform: translateX(-50%);
   width: 2.5rem;
   height: 5rem;
   background: url("../img/beginners/arrow2.png") no-repeat center;
   background-size: contain;
+
+  @include mq("sp") {
+    display: none;
+  }
 }
 
-.route-card__item:nth-child(3)::before {
+.route-card__item:nth-of-type(3)::before {
   content: "";
   position: absolute;
   top: 17rem;
-  left: 50.3%;
+  left: -11.7%;
   transform: translateX(-50%);
   width: 2.5rem;
   height: 5rem;
   background: url("../img/beginners/arrow2.png") no-repeat center;
   background-size: contain;
+
+  @include mq("sp") {
+    display: none;
+  }
 }
 
-.route-card__item:nth-child(4)::before {
+.route-card__item:nth-of-type(4)::before {
   content: "";
   position: absolute;
   top: 17rem;
-  left: 76.7%;
+  left: -12.3%;
   transform: translateX(-50%);
   width: 2.5rem;
   height: 5rem;
   background: url("../img/beginners/arrow2.png") no-repeat center;
   background-size: contain;
+
+  @include mq("sp") {
+    display: none;
+  }
 }
 
 .route-card__img {
@@ -819,7 +1184,7 @@
 }
 
 .route-card__body {
-  margin-top: 1.6rem;
+  margin-top: 1.4rem;
   padding-bottom: 1.6rem;
 }
 
@@ -831,7 +1196,12 @@
   line-height: 1.6;
   font-weight: 700;
   border-bottom: 0.1rem solid rgba(2, 177, 166, 1);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+  }
 }
 
 .route-card__text-sub {
@@ -839,6 +1209,17 @@
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.6;
-  margin-top: 1.2rem;
+  margin-top: 1.1rem;
   color: rgba(51, 51, 51, 1);
+
+  @include mq("sp") {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+}
+
+.access-top {
+  @include mq("sp") {
+    padding-top: 3.1rem;
+  }
 }
